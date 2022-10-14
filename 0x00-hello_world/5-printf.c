@@ -1,9 +1,11 @@
- #include <stdio.h>                                                                                                             
+ #include <stdio.h>
 
 /**
- * main -my function
+ * main -my function name
  *
- * return: give 0
+ *  Description: printing
+ *
+ * return:  Always 0 (Success)
  */
 int main(void)
 {
