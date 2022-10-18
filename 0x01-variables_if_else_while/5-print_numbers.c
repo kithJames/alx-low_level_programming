@@ -5,9 +5,11 @@
 /*
 *
 *main - entry point
+*Description prints numbers
 *Return: zero
 */
-int main(void)
+int
+main(void)
 {	int num = 48;
 
 	while (num <= 57)
