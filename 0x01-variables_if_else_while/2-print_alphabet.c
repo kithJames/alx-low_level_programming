@@ -1,28 +1,22 @@
 #include <stdio.h>
 /**
- * main - prints a-z in lower case
- *
- * Return: always 0
+ * main - entry point
+ * Return: zero always
  */
 int main(void)
 {
+	int letter = 97;
 
-	char lc;
+	while (letter <= 122)
 
-	for (lc = `a`; <= `z`; lc++)
 	{
-		putchar(lc);
+		putchar(letter);
 	}
-	putchar(`\n`);
-	return (0);
+	letter++;
+	}
 
-
-
-
-
-
-
-
+putchar ('\n');
+return (0);
 
 
 
