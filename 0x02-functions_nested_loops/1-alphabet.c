@@ -1,32 +1,15 @@
 #include "main.h"
-
-
-
 /**
- *
- * print_alphabet - print alphabet
- *
- *   
- *
- * Return: void
- *
+ * print_alphabet - Prints a to z followed
+ * by a new line
  */
-
-
-
 void print_alphabet(void)
-
 {
+	char i;
 
-		char letter = 'a';
-
-		while (letter <= 'z')
-
-{
-		putchar(letter);
-
-		letter++;
-		}
-
-		putchar('\n');
+	for (i = 'a'; i <= 'z'; i++)
+	{
+	_putchar(i);
+	}
+	_putchar('\n');
 }
