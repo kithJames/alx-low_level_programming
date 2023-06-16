@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include "lists.h"
 
 /**
@@ -23,3 +24,21 @@ size_t print_dlistint(const dlistint_t *h)
 	/* return the number of nodes */
 	return (num_nodes);
 }
+=======
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct dlistint_s {
+	    int n;
+	        struct dlistint_s *prev;
+		    struct dlistint_s *next;
+} dlistint_t;
+
+void print_dlistint(dlistint_t *head) {
+	    while (head != NULL) {
+		            printf("%d\n", head->n);
+			            head = head->next;
+				        }
+}
+
+>>>>>>> 06a5cd1a19908a24e2347d8a3061fad403d69f7d
