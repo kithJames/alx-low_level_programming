@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -fPIC -shared <c files> -o <library name>
+gcc -fPIC -shared -c -o 
