@@ -1,2 +1,5 @@
 #!/bin/bash
-unset LD_LIBRARY_PATH
+
+gcc -fpic -c *.c;
+gcc -shared -o liball.so *.o;
+
