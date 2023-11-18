@@ -1,27 +1,27 @@
 #include "variadic_functions.h"
-#include <stdarg.h>
-
 
 /**
- * sum_them_all - sum of all parametres
- * @n: number of parameters.
- * Return: Sum on success
+ * sum_them_all - entry point
+ * @n: size of triangle
+ * Description: --
+ * Return: --
  */
-
 int sum_them_all(const unsigned int n, ...)
 {
-	int sum = 0;
-
-	unsigned int i;
 	va_list args;
+	int sum = 0, i = 0;
 
-	if n == 0)
-		return (0);
 	va_start(args, n);
-	for (i = 0; i < n; i++)
-		sum += va_arg(args, int);
 
+	if (n == 0)
+		return (0);
+
+	while (i < (int)n)
+	{
+		sum += va_arg(args, int);
+		i++;
+	}
 	va_end(args);
+
 	return (sum);
 }
-
